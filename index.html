@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="scroll-progress"></div>
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="loader-content">
+                <svg class="loader-logo" width="50" height="50" viewBox="0 0 50 50">
+                    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" fill="currentColor" font-size="24px" font-weight="bold">G</text>
+                </svg>
+                <div class="loader-bar">
+                    <div class="loader-progress"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <div class="container nav-container">
+                <a href="#" class="logo">Glenn Nisperos</a>
+                <div class="nav-links">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#education" class="nav-link">Education</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                        <i class="fas fa-sun light-icon"></i>
+                        <i class="fas fa-moon dark-icon"></i>
+                    </button>
+                </div>
+                <button class="mobile-menu-btn" title="Toggle navigation menu">
+                    <span class="sr-only">Toggle navigation menu</span>
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#education" class="mobile-link">Education</a>
+            <a href="#experience" class="mobile-link">Experience</a>
+            <a href="#skills" class="mobile-link">Skills</a>
+            <a href="#projects" class="mobile-link">Projects</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+        </div>
+    </header>
+
+    <div id="main-content" style="display: none;">
+        <header id="home" class="first">
+            <div class="first-content">
+                <h1>Welcome to My Portfolio</h1>
+                <p>Full Stack Developer | Creative Problem Solver</p>
+            </div>
+        </header>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <img src="assets/img/profile.jpg" alt="Profile Picture">
+                        </div>
+                        <div class="profile-info">
+                            <h1 class="profile-name">Glenn Nisperos</h1>
+                            <p class="profile-title">Full Stack Developer</p>
+                            <div class="profile-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-user"></i>
+                                    <span>Age: 20</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-phone"></i>
+                                    <span>+63 992 763 0141</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>gnisperos769@gmail.com</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Baguio City, Philippines</span>
+                                </div>
+                                
+                                <div class="detail-item">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <span>University of the Cordilleras - BSIT</span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-sections">
+                        <div class="about-sections-top">
+                            <div class="about-section">
+                                <h3><i class="fas fa-user"></i> Professional Summary</h3>
+                                <p>Passionate and detail-oriented web developer with extensive experience in 
+                                    designing responsive and user-friendly websites. Proficient in modern 
+                                    web technologies like HTML, CSS, JavaScript, and PHP, as well 
+                                    as familiarity with frameworks such as React, React Native, Tailwind, 
+                                    Laravel, and Bootstrap. Capable of connecting databases, RESTful APIs, 
+                                    and improving website performance. Known for problem-solving 
+                                    abilities, cooperation, and a love for invention, particularly in 
+                                    developing answers to real-world problems. Dedicated to continual 
+                                    learning and keeping up with the newest industry developments.</p>
+                            </div>
+
+                            <div class="about-section">
+                                <h3><i class="fas fa-bullseye"></i> Career Objective</h3>
+                                <p>To leverage my technical expertise and passion for 
+                                    innovation in web development in building innovative, efficient, and 
+                                    impactful digital solutions. I aim to contribute to a forward-thinking 
+                                    organization while enhancing my skills in full-stack development, UX/UI 
+                                    design, and emerging frameworks like Node.js. Ultimately, I 
+                                    seek to make a meaningful impact on the IT industry and empower communities 
+                                    through technology-driven solutions.</p>
+                            </div>
+                        </div>
+
+                        <div class="about-sections-bottom">
+                            <div class="about-section">
+                                <h3><i class="fas fa-star"></i> Key Highlights</h3>
+                                <ul class="highlights-list">
+                                    <li><i class="fas fa-check"></i> Full-stack development expertise</li>
+                                    <li><i class="fas fa-check"></i> Strong problem-solving abilities</li>
+                                    <li><i class="fas fa-check"></i> Excellent team collaboration</li>
+                                    <li><i class="fas fa-check"></i> Passion for clean, efficient code</li>
+                                    <li><i class="fas fa-check"></i> Continuous learner</li>
+                                </ul>
+                            </div>
+
+                            <div class="about-section">
+                                <h3><i class="fas fa-heart"></i> Interests & Hobbies</h3>
+                                <ul class="interests-list">
+                                    <li><i class="fas fa-gamepad"></i> Gaming</li>
+                                    <li><i class="fas fa-code"></i> Coding Projects</li>
+                                    <li><i class="fas fa-music"></i> Music</li>
+                                    <li><i class="fas fa-book"></i> Reading Tech Blogs</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe 
+                        id="google-map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.5386518618366!2d120.57238269953204!3d16.416148200483306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTbCsDI0JzU4LjEiTiAxMjDCsDM0JzIwLjYiRQ!5e0!3m2!1sen!2sph!4v1625481245684!5m2!1sen!2sph"
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>University of the Cordilleras</h3>
+                    <p>College - Bachelor of Science in Information Technology</p>
+                    <span class="date">2022 - 2025</span>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Payas National High School</h3>
+                    <p>Senior High School - General Academic Stream</p>
+                    <span class="date">2020 - 2022</span>
+                    <ul>
+                        <li>Completed senior high school with honors</li>
+                        <li>Participated in research and innovation projects</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Payas National High School</h3>
+                    <p>Junior High School</p>
+                    <span class="date">2016 - 2020</span>
+                    <ul>
+                        <li>Completed secondary education with high honors</li>
+                        <li>Active member of the Computer Club</li>
+                        <li>Won awards in math, arts and science competitions</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Cablong Elemntary School</h3>
+                    <p>Elementary</p>
+                    <span class="date">2009 - 2016</span>
+                    <ul>
+                        <li>Completed primary education with high honors</li>
+                        <li>Consistently achieved high academic standing</li>
+                        <li>Active in Mathematics and Science clubs</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <h2>Professional Competencies</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Core Professional Skills</h3>
+                    <ul>
+                        <li><strong>Adaptability and Flexibility</strong>
+                            <p>Quick to adapt to new technologies and methodologies, embracing change with a positive mindset.</p>
+                        </li>
+                        <li><strong>Time Management and Prioritization</strong>
+                            <p>Skilled at organizing tasks effectively and meeting deadlines through systematic planning.</p>
+                        </li>
+                        <li><strong>Attention to Detail and Accuracy</strong>
+                            <p>Meticulous approach to work, ensuring high-quality output and minimal errors.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Technical and Analytical Capabilities</h3>
+                    <ul>
+                        <li><strong>Analytical and Logical Thinking</strong>
+                            <p>Strong problem-solving abilities with a systematic approach to challenges.</p>
+                        </li>
+                        <li><strong>Technical Aptitude and Knowledge</strong>
+                            <p>Rapid learner of new technologies with a solid foundation in programming concepts.</p>
+                        </li>
+                        <li><strong>Active Listening and Feedback</strong>
+                            <p>Effective at understanding requirements and incorporating constructive feedback.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Collaborative and Professional Attributes</h3>
+                    <ul>
+                        <li><strong>Teamwork and Collaboration</strong>
+                            <p>Strong team player with excellent communication and interpersonal skills.</p>
+                        </li>
+                        <li><strong>Professionalism and Work Ethic</strong>
+                            <p>Committed to maintaining high standards of professionalism and reliability.</p>
+                        </li>
+                        <li><strong>Incorporation of Best Practices</strong>
+                            <p>Dedicated to following industry standards and implementing best practices in all work.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <div class="skills-outer-container">
+                <div class="skills-scroll-container">
+                    <div class="skills-container">
+                        <!-- Original Set -->
+                        <div class="skill-category">
+                            <h3>Frameworks and Libraries</h3>
+                            <ul>
+                                <li>React.js</li>
+                                <li>React Native</li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3>CSS Frameworks</h3>
+                            <ul>
+                                <li>Bootstrap</li>
+                                <li>Tailwind CSS</li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3>Package Managers</h3>
+                            <ul>
+                                <li>npm (Node Package Manager)</li>
+                                <li>Yarn</li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3>Programming Languages</h3>
+                            <ul>
+                                <li>JavaScript (Node.js)</li>
+                                <li>PHP (Laravel)</li>
+                                <li>Python</li>
+                                <li>Java</li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3>Backend Frameworks</h3>
+                            <ul>
+                                <li>Laravel (PHP)</li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3>Relational Databases (SQL)</h3>
+                            <ul>
+                                <li>MySQL</li>
+                                <li>PostgreSQL</li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3>NoSQL Databases</h3>
+                            <ul>
+                                <li>Firebase Firestore</li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3>Authentication</h3>
+                            <ul>
+                                <li>Auth0</li>
+                                <li>Firebase Authentication</li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3>Web Servers</h3>
+                            <ul>
+                                <li>Apache</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="skills-container" aria-hidden="true">
+                        <!-- Duplicate Set -->
+                        <div class="skill-category">
+                            <h3>Frameworks and Libraries</h3>
+                            <ul>
+                                <li>React.js</li>
+                                <li>React Native</li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3>CSS Frameworks</h3>
+                            <ul>
+                                <li>Bootstrap</li>
+                                <li>Tailwind CSS</li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3>Package Managers</h3>
+                            <ul>
+                                <li>npm (Node Package Manager)</li>
+                                <li>Yarn</li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3>Programming Languages</h3>
+                            <ul>
+                                <li>JavaScript (Node.js)</li>
+                                <li>PHP (Laravel)</li>
+                                <li>Python</li>
+                                <li>Java</li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3>Backend Frameworks</h3>
+                            <ul>
+                                <li>Laravel (PHP)</li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3>Relational Databases (SQL)</h3>
+                            <ul>
+                                <li>MySQL</li>
+                                <li>PostgreSQL</li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3>NoSQL Databases</h3>
+                            <ul>
+                                <li>Firebase Firestore</li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3>Authentication</h3>
+                            <ul>
+                                <li>Auth0</li>
+                                <li>Firebase Authentication</li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3>Web Servers</h3>
+                            <ul>
+                                <li>Apache</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-progress-bar">
+                    <div class="progress-thumb"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Survey Form</h3>
+                    <p>A responsive and user-friendly survey form implementation showcasing modern form design and validation techniques.</p>
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Form Design</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://nelg22.github.io/Survey-Form/" target="_blank" rel="noopener noreferrer" class="btn">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/NelG22/Survey-Form" target="_blank" rel="noopener noreferrer" class="btn">
+                            <i class="fab fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Tribute Page</h3>
+                    <p>An elegant tribute page demonstrating responsive layout design and engaging content presentation.</p>
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Responsive Design</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://nelg22.github.io/TributePage/" target="_blank" rel="noopener noreferrer" class="btn">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/NelG22/TributePage" target="_blank" rel="noopener noreferrer" class="btn">
+                            <i class="fab fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Technical Documentation Page</h3>
+                    <p>A comprehensive technical documentation page featuring organized content structure and easy navigation.</p>
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Documentation</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://nelg22.github.io/Technical-Documentaion-Page/" target="_blank" rel="noopener noreferrer" class="btn">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/NelG22/Technical-Documentaion-Page" target="_blank" rel="noopener noreferrer" class="btn">
+                            <i class="fab fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Product Landing Page</h3>
+                    <p>A modern product landing page showcasing effective marketing design and user experience principles.</p>
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Marketing Design</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://nelg22.github.io/Product-Landing-Page/" target="_blank" rel="noopener noreferrer" class="btn">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/NelG22/Product-Landing-Page" target="_blank" rel="noopener noreferrer" class="btn">
+                            <i class="fab fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>CSS Exercises</h3>
+                    <p>A collection of CSS exercises demonstrating various styling techniques and best practices.</p>
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Web Design</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/NelG22/CIT14-12H_NISPEROS" target="_blank" rel="noopener noreferrer" class="btn">
+                            <i class="fab fa-github"></i> View Repository
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>Feel free to reach out through any of these platforms:</p>
+                    <div class="social-media-links">
+                        <a href="https://github.com/NelG22" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.facebook.com/glenn.d.nisperos" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <i class="fab fa-facebook"></i>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="https://t.me/ItzmeNelG" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <i class="fab fa-telegram"></i>
+                            <span>Telegram</span>
+                        </a>
+                        <a href="https://www.messenger.com/t/100016806151288" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <i class="fab fa-facebook-messenger"></i>
+                            <span>Messenger</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/glenn-nisperos-35b599294/" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://twitter.com/nel_g___" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                            <span>Twitter</span>
+                        </a>
+                        <a href="https://www.instagram.com/nel_g___/" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="mailto:gnisperos769@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h3>Send Me a Message</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                    <div id="form-message" class="form-message"></div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Glenn Nisperos. All rights reserved.</p>
+        </footer>
+
+        <script src="script.js"></script>
+        <script>
+            window.addEventListener('load', function() {
+                const loadingScreen = document.getElementById('loading-screen');
+                const mainContent = document.getElementById('main-content');
+                
+                setTimeout(function() {
+                    loadingScreen.style.opacity = '0';
+                    mainContent.style.display = 'block';
+                    setTimeout(function() {
+                        loadingScreen.style.display = 'none';
+                        mainContent.style.opacity = '1';
+                    }, 500);
+                }, 2000);
+            });
+
+            document.addEventListener('DOMContentLoaded', function() {
+                const scrollProgress = document.querySelector('.scroll-progress');
+                
+                window.addEventListener('scroll', () => {
+                    const windowHeight = window.innerHeight;
+                    const documentHeight = document.documentElement.scrollHeight;
+                    const scrollTop = window.scrollY;
+                    const scrollPercentage = (scrollTop / (documentHeight - windowHeight));
+                    
+                    scrollProgress.style.transform = `scaleX(${scrollPercentage})`;
+                    
+                    // Add glow effect when scrolling
+                    scrollProgress.style.boxShadow = `0 0 10px rgba(var(--primary-color-rgb), ${scrollPercentage * 0.5})`;
+                });
+
+                const timelineItems = document.querySelectorAll('.timeline-item');
+                
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.style.animation = 'slideIn 0.6s ease forwards';
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, {
+                    threshold: 0.2,
+                    rootMargin: '0px 0px -50px 0px'
+                });
+
+                timelineItems.forEach((item, index) => {
+                    item.style.animationDelay = `${index * 0.2}s`;
+                    observer.observe(item);
+                });
+
+                const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+                const mobileMenu = document.querySelector('.mobile-menu');
+                const mobileLinks = document.querySelectorAll('.mobile-link');
+
+                mobileMenuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('active');
+                    document.body.classList.toggle('menu-open');
+                });
+
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.remove('active');
+                        document.body.classList.remove('menu-open');
+                    });
+                });
+
+                const cards = document.querySelectorAll('.project-card');
+                
+                cards.forEach(card => {
+                    card.addEventListener('mousemove', e => {
+                        const rect = card.getBoundingClientRect();
+                        card.style.setProperty('--mouse-x', `${e.clientX - rect.left}px`);
+                        card.style.setProperty('--mouse-y', `${e.clientY - rect.top}px`);
+                    });
+                });
+            });
+        </script>
+    </div>
+</body>
+</html>
